@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Summary</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            height: 100px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+        }
+
+        .SUMMARY{
+            font-size: 40px;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 10px;
+        }
+
+        .meanu4{
+            height: 20px;
+            width: 1060px;
+            margin-top: 15px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            border-top: 2px solid #D3D3D3;
+            border-bottom: 2px solid #D3D3D3;
+        }
+
+        .INTRODUCATION{
+            font-family: sans-serif;
+            text-decoration: none;
+            margin-left: 72px;
+            font-size: 14px;
+            font-weight: 900;
+        }
+
+        .container{
+            height: 980px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .Computer-networking{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .Computer-Networking1{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 30px;
+        }
+
+        .Definition{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .types{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .pan{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .lan{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .wan{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .man{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .Network-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .Network-topology1{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 54px;
+        }
+
+        .Point-to-point{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 18px;
+            margin-left: 85px;
+        }
+
+        .Bus-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 18px;
+            margin-left: 85px;
+        }
+
+        .Star-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 18px;
+            margin-left: 85px;
+        }
+
+        .Ring-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 18px;
+            margin-left: 85px;
+        }
+
+        .Tree-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 18px;
+            margin-left: 85px;
+        }
+
+        .Mesh-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 18px;
+            margin-left: 85px;
+        }
+
+        .Advantage-Disadvantege{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            margin-left: 35px;
+        }
+
+        .left{
+            height: 205px;
+            width: 370px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .ADVANTAGES{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .Resource-sharing{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+
+        .Sharing-files{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+
+        .Fast-data-transfer{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+
+        .Easy-to-take-backup{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+
+        .right{
+            height: 205px;
+            width: 460px;
+            float: right;
+            margin-right: 222px;
+            margin-top: 5px;
+        }
+
+        .DISADVANTAGES{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .Additional{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+
+        .Management{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+
+        .Health-issues{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+
+        .Security-risks{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 15px;
+            margin-left: 85px;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <p class="SUMMARY">SUMMARY</p>
+
+            <div class="meanu4">
+                <a href="Computer-Networking-and-Internet.html" class="INTRODUCATION">Introduction</a>
+                <a href="Network-type.html" class="INTRODUCATION">Network-type</a>
+                <a href="Network-topology.html" class="INTRODUCATION">Network-topology</a>
+                <a href="Advantage & Disadvantege.html" class="INTRODUCATION">Advantage & Disadvantege</a>
+                <a href="Summary.html" class="INTRODUCATION">Summary</a>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="Computer-networking">Computer networking and the internet are fundamental components of modern technology and communication.</p>
+            <p class="Computer-Networking1">#. Computer Networking:</p>
+            <p class="Definition">1. Definition: Computer networking refers to the practice of connecting computers and other devices to share resources and communicate with each other.</p>
+            <p class="types">2. Types of Networks: </p>
+            <p class="pan">* PAN (Personal Area Network): A interconnects technology devices, typically within the range of a single user, which is approximately 10 meters or 30 feet.</p>
+            <p class="lan">* LAN (Local Area Network): A network confined to a small geographic area, like an office, building, or campus.</p>
+            <p class="wan">* WAN (Wide Area Network): It’s Spans a large geographic area, often connecting multiple LANs.</p>
+            <p class="man">* MAN (Metropolitan Area Network): It’s Covers a city or large Area.</p>
+
+            <p class="Network-topology">3. Network-topology: </p>
+            <p class="Network-topology1">  There are six Network-topology</p>
+            <p class="Point-to-point">* Point-to-point</p>
+            <p class="Bus-topology">* Bus topology</p>
+            <p class="Star-topology">* Star topology</p>
+            <p class="Ring-topology">* Ring topology</p>
+            <p class="Tree-topology">* Tree topology</p>
+            <p class="Mesh-topology">* Mesh topology</p>
+
+            <p class="Advantage-Disadvantege">4. Advantage & Disadvantege </p>
+            <div class="left">
+                <p class="ADVANTAGES">ADVANTAGES</p>
+                <p class="Resource-sharing">* Resource sharing</p>
+                <p class="Sharing-files">* Sharing files</p>
+                <p class="Fast-data-transfer">* Fast data transfer</p>
+                <p class="Easy-to-take-backup">* Easy to take backup</p>
+            </div>
+            <div class="right">
+                <p class="DISADVANTAGES">DISADVANTAGES</p>
+                <p class="Additional">* Additional cost of networking equipment</p>
+                <p class="Management">* Management of large network</p>
+                <p class="Health-issues">* Health issues</p>
+                <p class="Security-risks">* Security risks</p>
+            </div>
+        </div>
+    </body>
+</html>

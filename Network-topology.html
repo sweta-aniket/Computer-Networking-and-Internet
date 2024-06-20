@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Network-topology</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            height: 100px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+        }
+
+        .Network-topology{
+            font-size: 40px;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 10px;
+        }
+
+        .meanu2{
+            height: 20px;
+            width: 1060px;
+            margin-top: 15px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            border-top: 2px solid #D3D3D3;
+            border-bottom: 2px solid #D3D3D3;
+        }
+
+        .INTRODUCATION{
+            font-family: sans-serif;
+            text-decoration: none;
+            margin-left: 72px;
+            font-size: 14px;
+            font-weight: 900;
+        }
+
+        .container{
+            height: 195px;
+            width: 1060px;
+            margin: auto;
+            margin-top: -10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .Network1{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .Network-topologies{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        .container1{
+            height: 230px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .left{
+            height: 220px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .point{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .point1{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .right{
+            height: 220px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .point-to-point{
+            height: 205px;
+            width: 400px;
+            float: right;
+            margin-top: 5px;
+            margin-right: 65px;
+        }
+
+        .container2{
+            height: 350px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .left1{
+            height: 330px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .bus-topology1{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .this-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .right1{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .bus-topology{
+            height: 280px;
+            width: 518px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 48px;
+        }
+
+        .container3{
+            height: 312px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .left2{
+            height: 300px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .star-topology1{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .A-Star{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .right2{
+            height: 300px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .star-topology{
+            height: 275px;
+            width: 518px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 12px;
+        }
+
+        .container4{
+            height: 350px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .left3{
+            height: 300px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .ring{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .a-ring{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .right3{
+            height: 338px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .Ring-Topology{
+            height: 330px;
+            width: 450px;
+            float: right;
+            margin-right: 35px;
+            margin-top: 5px;
+        }
+
+        .container5{
+            height: 325px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .left4{
+            height: 315px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .tree{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .A-tree-topology{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .right4{
+            height: 315px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .tree-topology{
+            height: 315px;
+            width: 525px;
+            float: right;
+        }
+
+        .container6{
+            height: 485px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+        }
+
+        .left5{
+            height: 475px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .mesh{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 30px;
+            text-align: center;
+        }
+
+        .Mesh-topology1{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .Mesh-topology2{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .Mesh-topology3{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .Mesh-topology4{
+            font-size: 19px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 20px;
+        }
+
+        .right5{
+            height: 475px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .Mesh-Topology{
+            height: 345px;
+            width: 525px;
+            float: right;
+            margin-top: 65px;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <p class="Network-topology">NETWORK TOPOLOGIES</p>
+
+            <div class="meanu2">
+                <a href="Computer-Networking-and-Internet.html" class="INTRODUCATION">Introduction</a>
+                <a href="Network-type.html" class="INTRODUCATION">Network-type</a>
+                <a href="Network-topology.html" class="INTRODUCATION">Network-topology</a>
+                <a href="Advantage & Disadvantege.html" class="INTRODUCATION">Advantage & Disadvantege</a>
+                <a href="Summary.html" class="INTRODUCATION">Summary</a>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+            <p class="Network1">Network topology refers to the layout in which the various components of a network,
+                <br> like nodes, links, peripherals, etc., Are connected and communicate with each other. A
+                <br> topology can either be physical or logical. Physical topology is the physical layout of
+                <br> nodes, workstations, and cables in the network, whereas logical topology is the way
+                <br> how information flows between the different components.
+            </p>
+
+            <p class="Network-topologies">Network topologies are categorised into the following basic types:</p>
+        </div>
+
+        <div class="container1">
+            <div class="left">
+                <p class="point">POINT-TO-POINT</p>
+                <p class="point1">Point-to-point is a simple topology that directly links two nodes
+                    <br> and reserves the entire bandwidth of the connection for them
+                    <br> to communicate with each other. This type of network is more
+                    <br> suitable for small areas where computers are in close
+                    <br> proximity. This technology provides a faster and reliable
+                    <br> connection.</p>
+            </div>
+
+            <div class="right">
+                <img src="point-to-point.png" alt="point-to-point" class="point-to-point">
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="left1">
+                <p class="bus-topology1">BUS TOPOLOGY</p>
+                <p class="this-topology">This topology uses a single communication line or one main cable to which all the nodes are directly connected. The main cable acts as a backbone for the network. It transmits data only in one direction. <br>
+                    This type of structure, one of the computers in the network acts as the
+                 computer server, that provides data to all the clients.
+                    This topology is used in small network where cable requirements is
+                     relatively small. For this reason, this type of topology is not used for large
+                    networks, such as those covering an entire building.
+                </p>
+            </div>
+
+            <div class="right1">
+                <img src="bus-topology.png" alt="bus-topology" class="bus-topology">
+            </div>
+        </div>
+
+        <div class="container3">
+            <div class="left2">
+                <p class="star-topology1">STAR TOPOLOGY</p>
+                <p class="A-Star">A Star topology is a type of network topology in which all the devices or
+                     nodes are physically connected to a central node such as a router, switch,
+                     or hub. This devices communicate across the network by passing data
+                     through this hub. The central node (hub) acts as a server, and the
+                     connecting nodes act as clients. Star topology is very popular because the
+                     setup cost is low. It is easy to add a new device to the network as only one
+                     cable is required and the configuration is simple.</p>
+            </div>
+
+            <div class="right2">
+                <img src="Star-topology.gif" alt="star-topology" class="star-topology">
+            </div>
+        </div>
+
+        <div class="container4">
+            <div class="left3">
+                <p class="ring">RING TOPOLOGY</p>
+                <p class="a-ring">A ring topology is a type of network configuration where each device is
+                     connected directly to two other devices, forming a single continuous pathway for
+                     data transmission. In a ring topology, data travels in one direction around the
+                     ring until it reaches its destination or encounters a break in the ring.
+                    Ring topologies are used in both LAN and WAN setups. The main disadvantage
+                     of a ring topology is its susceptibility to network failure. If any single device or
+                     connection within the ring fails, it can disrupt the entire network gets affected. 
+                </p>
+            </div>
+
+            <div class="right3">
+                <img src="Ring-Topology.png" alt="Ring-Topology" class="Ring-Topology">
+            </div>
+        </div>
+
+        <div class="container5">
+            <div class="left4">
+                <p class="tree">TREE TOPOLOGY</p>
+                <p class="A-tree-topology">A tree topology in computer networking is a hierarchical arrangement of nodes in which each node is connected to a central node, often referred to as the root node or the hub. The structure resembles a tree, with branches stemming out from the central node to connect to other nodes. Tree topologies are commonly used in wide area networks (WANs) and local area networks (LANs), particularly in situations where scalability and ease of management are important.
+                    In tree topology, the expansion of the network is possible and easy but maintenance becomes difficult.
+                </p>
+            </div>
+
+            <div class="right4">
+                <img src="tree-topology.png" alt="tree-topology" class="tree-topology">
+            </div>
+        </div>
+
+        <div class="container6">
+            <div class="left5">
+                <p class="mesh">MESH TOPOLOGY</p>
+                <p class="Mesh-topology1">Mesh topology is a network topology in which each node (device or computer) is 
+                    connected to every other node in the network, forming a fully interconnected mesh of communication links. 
+                    In a mesh topology:
+                </p>
+                <p class="Mesh-topology2">1. Direct Connections:  Each node has a dedicated point-to-point link to every other node in the network.
+                    These links can be physical cables or virtual connections.</p>
+
+                <p class="Mesh-topology3">2. Scalability: Mesh networks can be easily scaled by adding more nodes without disrupting the existing network structure.
+                     Each new node simply needs to establish connections with the existing nodes.</p>
+
+                    <p class="Mesh-topology4">Mesh topologies are commonly used in scenarios where reliability and fault tolerance are critical,
+                         such as in large-scale networks,
+                         military applications, and some types of telecommunications networks. </p>
+            </div>
+
+            <div class="right5">
+                <img src="Mesh-Topology.png" alt="Mesh-Topology" class="Mesh-Topology">
+            </div>
+        </div>
+
+    </body>
+</html>

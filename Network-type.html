@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Network-Types</title>
+    </head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            height: 100px;
+            width: 1060px;
+            background-color: #ff999926;
+            margin: auto;
+        }
+
+        .types{
+            font-size: 40px;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 10px;
+        }
+
+        .meanu1{
+            height: 20px;
+            width: 1060px;
+            margin-top: 15px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            border-top: 2px solid #D3D3D3;
+            border-bottom: 2px solid #D3D3D3;
+        }
+
+        .INTRODUCATION{
+            font-family: sans-serif;
+            text-decoration: none;
+            margin-left: 72px;
+            font-size: 14px;
+            font-weight: 900;
+        }
+
+        .container{
+            height: 255px;
+            width: 1060px;
+            margin: auto;
+            margin-top: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            background-color: #ff999926;
+        }
+
+        .container1{
+            height: 45px;
+            width: 1030px;
+            margin: auto;
+            margin-top: 15px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .pan{
+            font-size: 30px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 4px;
+        }
+
+        .container2{
+            height: 45px;
+            width: 1030px;
+            margin: auto;
+            margin-top: 15px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .lan{
+            font-size: 30px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 4px;
+        }
+
+        .container3{
+            height: 45px;
+            width: 1030px;
+            margin: auto;
+            margin-top: 15px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .man{
+            font-size: 30px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 4px;
+        }
+
+        .container4{
+            height: 45px;
+            width: 1030px;
+            margin: auto;
+            margin-top: 15px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .wan{
+            font-size: 30px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 4px;
+        }
+
+        .footer1{
+            height: 340px;
+            width: 1060px;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            background-color: #ff999926;
+        }
+
+        .left{
+            height: 330px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .PERSONAL{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        .pan-is{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+        }
+
+        .Personal-area{
+            font-size: 20px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+        }
+
+        .right{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .pan-network{
+            height: 330px;
+            width: 330px;
+            float: right;
+            margin-top: 0px;
+            margin-right: 97px;
+        }
+
+        .footer2{
+            height: 340px;
+            width: 1060px;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            background-color: #ff999926;
+        }
+
+        .left1{
+            height: 330px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .LOCAL{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        .in-local{
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+            line-height: 135%;
+        }
+
+        .home{
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+            line-height: 135%;
+        }
+
+        .right1{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .lan-network{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-top: 0px;
+            margin-right: -2px;
+        }
+
+        .footer3{
+            height: 340px;
+            width: 1060px;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            background-color: #ff999926;
+        }
+
+        .left2{
+            height: 330px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .METROPOLITAN{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        .man-is{
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+            line-height: 135%;
+        }
+
+        .the-most{
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+            line-height: 135%;
+        }
+
+        .right2{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .man-network{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-top: 0px;
+            margin-right: -2px;
+        }
+
+        .footer4{
+            height: 340px;
+            width: 1060px;
+            margin: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+            background-color: #ff999926;
+        }
+
+        .left3{
+            height: 330px;
+            width: 525px;
+            float: left;
+            margin-left: 4px;
+            margin-top: 5px;
+        }
+
+        .WIDE-AREA{
+            font-size: 25px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 35px;
+            text-align: center;
+        }
+
+        .this-kind{
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+            line-height: 135%;
+        }
+
+        .the-main{
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+            line-height: 135%;
+        }
+
+        .the-common{
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 0px;
+            margin: 0px;
+            padding-top: 25px;
+            line-height: 135%;
+        }
+
+        .right3{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+
+        .wan-network{
+            height: 330px;
+            width: 525px;
+            float: right;
+            margin-top: 0px;
+            margin-right: -2px;
+        }
+    </style>
+    <body>
+        <div class="header">
+            <p class="types">TYPES OF NETWORKING</p>
+
+            <div class="meanu1">
+                <a href="Computer-Networking-and-Internet.html" class="INTRODUCATION">Introduction</a>
+                <a href="Network-type.html" class="INTRODUCATION">Network-type</a>
+                <a href="Network-topology.html" class="INTRODUCATION">Network-topology</a>
+                <a href="Advantage & Disadvantege.html" class="INTRODUCATION">Advantage & Disadvantege</a>
+                <a href="Summary.html" class="INTRODUCATION">Summary</a>
+
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="container1">
+                <p class="pan">PERSONAL AREA NETWORK (PAN)</p>
+            </div>
+
+            <div class="container2">
+                <p class="lan">LOCAL AREA NETWORK (LAN)</p>
+            </div>
+
+            <div class="container3">
+                <p class="man">METROPOLITAN AREA NETWORK (MAN)</p>
+            </div>
+
+            <div class="container4">
+                <p class="wan">WIDE AREA NETWORK (WAN)</p>
+            </div>
+
+        </div>
+
+        <div class="footer1">
+
+            <div class="left">
+
+                <p class="PERSONAL">PERSONAL AREA NETWORK (PAN)</p>
+
+                <p class="pan-is">Pan is a computer network that is mainly created for an
+                    <br> individual person. It is used for communication among devices,
+                    <br> such as laptops, mobile phones, personal digital assistants
+                    <br> (PDAs), or smartphones.
+                </p>
+
+                <p class="Personal-area">Personal area network can either be wired or wireless. It
+                    <br> generally covers a range of less than 10 metres (about 30 feet).</p>
+
+            </div>
+
+            <div class="right">
+                <img src="pan-network.png" alt="pan-network" class="pan-network">
+            </div>
+
+        </div>
+
+        <div class="footer2">
+
+            <div class="left1">
+                <p  class="LOCAL">LOCAL AREA NETWORK (LAN)</p>
+
+                <p class="in-local">In Local Area Networks, tow or more computers and peripheral
+                    <br> devices are connected within a small area, such as room, an
+                    <br> office building, or campus.
+                    <br>
+                    In LAN, computer terminals are physically connected with wires.
+                </p>
+
+                <p class="home">Home Wi Fi networks and small business networks are common<br> examples of LANs.</p>
+            </div>
+
+            <div class="right1">
+                <img src="lan-network.png" alt="lan-network" class="lan-network">
+            </div>
+
+        </div>
+
+        <div class="footer3">
+
+            <div class="left2">
+                <p class="METROPOLITAN">METROPOLITAN AREA NETWORK (MAN)</p>
+
+                <p class="man-is">MAN is a larger network than LAN and spread across a city. It<br> covers an entire city, it is called metropolitan.</p>
+
+                <p class="the-most">The most common example of MAN is the city cable network or<br> branches of a local bank in a city.</p>
+            </div>
+
+            <div class="right2">
+                <img src="man-network.png" alt="man-network" class="man-network">
+            </div>
+
+        </div>
+
+        <div class="footer4">
+
+            <div class="left3">
+                <p class="WIDE-AREA">WIDE AREA NETWORK (WAN)</p>
+
+                <p class="this-kind">This kind of network connects tow or more computers located at
+                    <br> distant places. They are linked by communication facilities, like
+                    <br> telecommunication or satellite signals.</p>
+
+                <p class="the-main">The main characteristic of WAN is that it requires a public<br> telecommunication media to transfer data.</p>
+
+                <p class="the-common">The common examples of WAN are:</p>
+            </div>
+
+            <div class="right3">
+                <img src="wan-network.jpg" alt="wan-network" class="wan-network">
+            </div>
+
+        </div>
+
+    </body>
+</html>
